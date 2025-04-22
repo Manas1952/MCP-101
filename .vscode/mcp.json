@@ -1,14 +1,15 @@
 {
   "inputs": [],
   "servers": {
-      "MyFirstMCP": {
-          "type": "stdio",
-          "command": "dotnet",
-          "args": [
-              "run",
-              "--project",
-              "C:\\Manas\\Practice\\MCPServer\\MyFirstMCP\\MyFirstMCP.csproj"
-          ]
+    "MyFirstMCP": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "veangeance00/monkeymcp"
+      ],
+      "env": {}
     }
   }
 }
